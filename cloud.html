@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Полноэкранный радужный фон -->
+  <div class="rainbow-bg"></div>
+
+  <!-- Кнопка управления музыкой (в верхнем правом углу) -->
+  <button class="music-btn" id="musicBtn">
+    <span class="music-icon">🎵</span>
+  </button>
+
+  <!-- Фоновая музыка (скрытый аудио элемент) -->
+  <audio id="backgroundMusic" loop>
+    <source src="D:/ALGORITMICA/Dein Herz ist kalt.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Верхняя навигация -->
+  <nav class="main-nav">
+    <button class="nav-btn active" data-target="0">Обо мне</button>
+    <button class="nav-btn" data-target="1">Проекты</button>
+    <button class="nav-btn" data-target="2">Радость</button>
+  </nav>
+
+  <!-- Контейнер для окон -->
+  <div class="container">
+    <div class="window active" id="window1">
+      <h1>Обо мне</h1>
+      <p>
+        Привет! Меня зовут Алексей. Я начинающий разработчик, увлечённый созданием веб-приложений и изучением новых технологий.
+      </p>
+    </div>
+
+    <div class="window" id="window2">
+      <h1>Мои проекты</h1>
+      <p>
+        Я работал над несколькими интересными проектами, включая веб-сайты, мобильные приложения и небольшие игры. Моя цель — постоянно улучшать свои навыки и создавать полезные решения.
+      </p>
+    </div>
+
+    <div class="window" id="window3">
+      <h1>Радость обучения</h1>
+      <p>
+        Я очень рад, что учусь программированию! Это увлекательный процесс, который позволяет мне создавать что-то новое и решать интересные задачи. Каждый день я узнаю что-то новое и становлюсь лучше.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.java"></script>
+</body>
+</html>
